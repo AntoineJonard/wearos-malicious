@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ok_green">#208900</color>
+    <color name="unknown_orange">#FF9800</color>
+    <color name="nok_red">#A30000</color>
+    <color name="grey_on_black">#636363</color>
+</resources>

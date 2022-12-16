@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <data>
+        <variable
+            name="protection"
+            type="com.antoinejonard.malware_poc.ProtectionState" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/protection_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@{protection.drawable}"
+            android:tint="@{protection.color}"
+            tools:ignore="UseAppTint" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacing"/>
+
+        <TextView
+            android:id="@+id/protection_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{protection.label}"
+            android:textSize="@dimen/h1"/>
+
+        <TextView
+            android:id="@+id/last_analyze"
+            android:text="@string/default_last_analyze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/hint"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacing"/>
+
+        <Button
+            android:id="@+id/analyze_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analyze"
+            android:textSize="@dimen/common"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
+</layout>

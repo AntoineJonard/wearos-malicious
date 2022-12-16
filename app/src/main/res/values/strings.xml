@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">malware_poc</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="analyze">Analyze</string>
+    <string name="safe">Safe</string>
+    <string name="not_safe">Problems</string>
+    <string name="partially_safe">Unknown</string>
+    <string name="default_progress">0%</string>
+    <string name="default_analysis_label">Starting analysis…</string>
+    <string name="progres_percent">%1$d\%%</string>
+    <string name="no_reading_permission">No reading permission</string>
+    <string name="default_last_analyze">Last analyze : 12/11/22 at 8</string>
+    <string name="no_analyze">No Analyze yet</string>
+    <string name="complication_description">Tell user if his device is safe</string>
+</resources>
