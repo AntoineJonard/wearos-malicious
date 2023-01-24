@@ -41,17 +41,18 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.activity:activity-ktx:1.6.1'
     implementation 'com.google.android.gms:play-services-wearable:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.wear:wear:1.2.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
-    implementation 'androidx.databinding:databinding-common:7.3.1'
+    implementation 'androidx.databinding:databinding-common:7.4.0'
     // Use to implement wear watchface complications
     implementation "androidx.wear.watchface:watchface-complications-data-source:1.2.0-alpha05"
     // (Kotlin-specific extensions)
     implementation "androidx.wear.watchface:watchface-complications-data-source-ktx:1.2.0-alpha05"
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
